@@ -1,0 +1,129 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1F3D;
+}
+
+nav {
+  display: flex;
+}
+
+nav .logo-container {
+  margin-left: 5%;
+  position: absolute;
+  height: 120px;
+}
+
+nav .ul-container {
+  width: 100%;
+  height: 120px;
+}
+
+nav .ul-container ul {
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  font-size: 28px;
+  width: max-content;
+  margin: 0px auto;
+  font-weight: 600;
+}
+
+nav ul li {
+  margin: 0px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFC1AD;
+  font-family: 'Poppins', sans-serif;
+  padding: 0px 5px;
+}
+
+nav ul li.join-us {
+  background: #FFC1AD;
+  color: #161834;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  color: #B5FAD2;
+  width: max-content;
+  margin: auto;
+  text-align: center;
+}
+
+.title h1 {
+  font-weight: bold;
+  font-size: 64px;
+}
+
+.title h1 span {
+  color: #FFC1AD;
+}
+
+.title h3 {
+  font-weight: normal;
+  font-size: 47px;
+}
+
+section.sleep-essentials {
+  font-family: 'Poppins', sans-serif;
+  background: #FFC1AD;
+  color: #161616;
+  margin-top: calc(100vh - 120px);
+  font-size: 24px;
+}
+
+section.sleep-essentials .content {
+  display: static;
+  margin: 20%;
+  padding: 30px 0px;
+}
+
+section.sleep-essentials .content h3 {
+  font-weight: 600;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+section.sleep-essentials .content ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.sleep-essentials .content ul img {
+  marign-bottom: 30px;
+}
+
+section.sleep-essentials .content ul h4 {
+  font-weight: 600;
+}
+
+section.sleep-essentials .content ul p {
+  width: 500px;
+  font-size: 16px;
+}
+
+.background-container {
+  position: fixed;
+  top: -300px;
+  left: -10%;
+  width: 120%;
+  z-index: -2;
+}
+
+.background-container img {
+  width: 100%;
+}
