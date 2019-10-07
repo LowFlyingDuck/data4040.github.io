@@ -76,43 +76,51 @@ nav ul li.join-us {
   font-size: 47px;
 }
 
-section.sleep-essentials {
+section {
   font-family: 'Poppins', sans-serif;
-  background: #FFC1AD;
-  color: #161616;
   margin-top: calc(100vh - 120px);
   font-size: 24px;
 }
 
-section.sleep-essentials .content {
-  display: static;
-  margin: 20%;
-  padding: 3vh 0px;
+section.blue {
+  color: #FFC1AD;
+  background: #161616;
 }
 
-section.sleep-essentials .content h3 {
+section.red {
+  color: #161616;
+  background: #FFC1AD;
+}
+
+section .content {
+  display: static;
+  margin: 20%;
+  padding: 5vh 0px;
+}
+
+section .content h3 {
   font-weight: 600;
   font-size: 36px;
   margin-bottom: 3vh;
 }
 
-section.sleep-essentials .content ul {
+section.red .content ul {
   text-align: center;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
-section.sleep-essentials .content ul img {
+section.red .content ul img {
   marign-bottom: 3vh;
 }
 
-section.sleep-essentials .content ul h4 {
+section.red .content ul h4 {
   margin-bottom: 1vh;
   font-weight: 600;
 }
 
-section.sleep-essentials .content ul p {
+section.red .content ul p {
   width: 400px;
   font-size: 18px;
 }
