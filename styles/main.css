@@ -8,10 +8,32 @@
 a {
   text-decoration: none;
   color: #FFC1AD;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  bottom: -5px;
+  background-color: #FFC1AD;
+  display: block;
+  height: 3px;
+  width: 20%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 .join-us a {
   color: #1d1f3d;
+}
+
+.join-us a::after {
+  content: none;
 }
 
 button {
