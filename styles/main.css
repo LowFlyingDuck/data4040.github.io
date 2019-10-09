@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   color: #FFC1AD;
   position: relative;
+  transition: 0.2s;
 }
 
 a::after {
@@ -33,7 +34,11 @@ a:hover::after {
 }
 
 .join-us a::after {
-  content: none;
+  width: 0px;
+}
+
+.join-us a:hover::after {
+  width: 100%;
 }
 
 button {
@@ -114,6 +119,15 @@ nav ul li.join-us {
   color: #161834;
 }
 
+nav ul li.join-us:hover {
+  background: transparent;
+  transition: 0.2s;
+}
+
+nav ul li.join-us:hover>a {
+  color: #FFC1AD;
+}
+
 .title {
   position: absolute;
   top: 50%;
@@ -142,13 +156,15 @@ nav ul li.join-us {
 
 section {
   font-family: 'Poppins', sans-serif;
-  margin-top: calc(100vh - 120px);
-  font-size: 24px;
+  font-size: 20px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(22, 22, 22, 0.7);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(22, 22, 22, 0.7);
+  box-shadow: 0px 0px 5px 0px rgba(22, 22, 22, 0.7)
 }
 
 section.blue {
-  color: #FFC1AD;
-  background: #161616;
+  color: #161616;
+  background: #B5FAD2;
 }
 
 section.red {
@@ -156,9 +172,13 @@ section.red {
   background: #FFC1AD;
 }
 
+section.red#first {
+  margin-top: calc(100vh - 120px);
+}
+
 section .content {
   display: static;
-  margin: 20%;
+  margin: 10vh 20%;
   padding: 5vh 0px;
 }
 
@@ -176,17 +196,19 @@ section.red .content ul {
 }
 
 section.red .content ul img {
-  marign-bottom: 3vh;
+  width: 50%;
+  margin-bottom: 3vh;
 }
 
 section.red .content ul h4 {
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
+  font-size: 25px;
   font-weight: 600;
 }
 
 section.red .content ul p {
-  width: 400px;
-  font-size: 18px;
+  width: 300px;
+  font-size: 16px;
 }
 
 .background-container {
