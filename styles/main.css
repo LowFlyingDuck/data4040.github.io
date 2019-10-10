@@ -186,6 +186,7 @@ nav ul li.join-us .signup-form .content input {
 
 nav ul li.join-us .signup-form .content input:focus {
   border-color: #161616;
+  outline: none;
 }
 
 nav ul li.join-us .signup-form .content .outer>input {
