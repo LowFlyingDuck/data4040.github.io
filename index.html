@@ -24,19 +24,62 @@
           <a href="#">Join Us</a>
           <div class="signup-form">
             <div class="content">
-              <form>
+              <form formaction="javascript: login();">
                 <h4>Log In to your Zlip account</h4>
                 <div class="outer">
                   <div class="inner">
                     <input type="email" id="email-forum" placeholder="email address" autocomplete="off" />
                     <input type="password" id="password" placeholder="password" autocomplete="off" />
                   </div>
-                  <button class="blue-filled" onclick="javascript: submit-forum()">Sign In</button>
+                  <button class="blue-filled" onclick="javascript: login();">Sign In</button>
                 </div>
+              </form>
+              <form>
                 <h4>Sign Up for the chargeable Zlip program</h4>
                 <div class="outer">
                   <input type="email" id="email-program" placeholder="email address" autocomplete="off" />
                   <button class="blue-filled" onclick="javascript: submit-signup()">Continue</button>
+                  <script type="text/javascript">
+                    var accounts = [
+                        {
+                          name: "Admin Jones",
+                          email: "admin@page.com",
+                          password: "admin"
+                        },
+                        {
+                          name: "Freddy",
+                          email: "freddy@page.com",
+                          password: "dasgewürz123"
+                        }
+                        {
+                          name: "Silvia",
+                          email: "silvia@page.com",
+                          password: "silvia"
+                        }
+                      ]
+
+                    function password(data) {
+                      for(i=0; i < accounts.length; i++) {
+                        if (accounts[i].email == data) {
+                          return accounts[i].password;
+                        }
+                      }
+                      return false;
+                    }
+
+                    function login() {
+                      var email = document.getElementById('email-forum').value;
+                      var passwd = document.getElementById('password').value;
+                      if (email == "" || passwd == "") {
+                        alert("Please enter in something...");
+                      }
+                      else if (password(email) == passwd) {
+                        alert("This page isn't finished yet...");
+                      } else {
+                        alert("Either your email address or password is incorrect...");
+                      }
+                    }
+                  </script>
                 </div>
               </form>
             </div>
