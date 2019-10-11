@@ -11,7 +11,7 @@
 
   <nav>
     <div class="logo-container">
-      <img src="images/ZLIP.png" alt="logo">
+      <a href="index.html"><img src="images/ZLIP.png" alt="logo"></a>
     </div>
 
     <div class="ul-container">
@@ -28,14 +28,14 @@
                 <h4>Log In to your Zlip account</h4>
                 <div class="outer">
                   <div class="inner">
-                    <input type="email" id="email-forum" placeholder="email address" />
-                    <input type="password" id="password" placeholder="password" />
+                    <input type="email" id="email-forum" placeholder="email address" autocomplete="off" />
+                    <input type="password" id="password" placeholder="password" autocomplete="off" />
                   </div>
                   <button class="blue-filled" onclick="javascript: submit-forum()">Sign In</button>
                 </div>
                 <h4>Sign Up for the chargeable Zlip program</h4>
                 <div class="outer">
-                  <input type="email" id="email-program" placeholder="email address" />
+                  <input type="email" id="email-program" placeholder="email address" autocomplete="off" />
                   <button class="blue-filled" onclick="javascript: submit-signup()">Continue</button>
                 </div>
               </form>

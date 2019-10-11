@@ -12,6 +12,10 @@
   background: black;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   text-decoration: none;
   color: #FFC1AD;
@@ -95,6 +99,10 @@ nav .logo-container {
   height: 120px;
 }
 
+nav .logo-container a::after {
+  content: none;
+}
+
 nav .ul-container {
   width: 100%;
   height: 120px;
@@ -138,6 +146,9 @@ nav ul li.join-us:hover>a {
 
 nav ul li.join-us:hover>.signup-form {
   opacity: 1;
+  transform: translateY(0%);
+  z-index: 2;
+  transition: opacity 0.2s;
 }
 
 nav ul li.join-us .signup-form {
@@ -145,21 +156,20 @@ nav ul li.join-us .signup-form {
   position: absolute;
   width: 500%;
   background: #FFC1AD;
-  z-index: 2;
-  top: 45px;
+  transform: translateY(-200%);
+  top: 42px;
   left: 0;
-  transition: 0.2s;
 }
 
 nav ul li.join-us .signup-form .content {
-  padding: 20px;
+  padding: 4vh;
   margin: auto;
   align-items: center;
 }
 
 nav ul li.join-us .signup-form .content .outer {
   display: flex;
-  margin: 10px 0 44px 0;
+  margin: 20px 0 44px 0;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -197,11 +207,14 @@ nav ul li.join-us .signup-form .content .outer>input {
 nav ul li.join-us .signup-form .content button {
   margin: 0;
   font-size: 24px;
+  background: #1D1F3D;
+  color: #FFC1AD;
 }
 
 nav ul li.join-us .signup-form .content button:hover {
   color: #1D1F3D;
   border-color: #1D1F3D;
+  background: transparent;
 }
 
 .title {
