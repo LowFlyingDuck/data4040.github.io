@@ -41,45 +41,9 @@
                   <input type="email" id="email-program" placeholder="email address" autocomplete="off" />
                   <button class="blue-filled" onclick="javascript: submit-signup()">Continue</button>
                   <script type="text/javascript">
-                    var accounts = [
-                        {
-                          name: "Admin Jones",
-                          email: "admin@page.com",
-                          password: "admin"
-                        },
-                        {
-                          name: "Freddy",
-                          email: "freddy@page.com",
-                          password: "dasgewürz123"
-                        },
-                        {
-                          name: "Silvia",
-                          email: "silvia@page.com",
-                          password: "silvia"
-                        }
-                      ]
 
-                    function password(data) {
-                      for(i=0; i < accounts.length; i++) {
-                        if (accounts[i].email == data) {
-                          return accounts[i].password;
-                        }
-                      }
-                      return false;
-                    }
+                  
 
-                    function login() {
-                      var email = document.getElementById('email-forum').value;
-                      var passwd = document.getElementById('password').value;
-                      if (email == "" || passwd == "") {
-                        alert("Please enter in something...");
-                      }
-                      else if (password(email) == passwd) {
-                        alert("This page isn't finished yet...");
-                      } else {
-                        alert("Either your email address or password is incorrect...");
-                      }
-                    }
                   </script>
                 </div>
               </form>
@@ -139,6 +103,15 @@
   <div class="background-container">
     <img src="images/Background.svg" alt="wavy background">
   </div>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.2.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
 
 </body>
 

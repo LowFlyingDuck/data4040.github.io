@@ -1,0 +1,23 @@
+{
+  "name": "zlip",
+  "version": "1.0.0",
+  "description": "This is the Zlip forum webapplication",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "no",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "data4040.github.io"
+  },
+  "keywords": [
+    "zlip"
+  ],
+  "author": "Data4040",
+  "license": "MIT"
+}

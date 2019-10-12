@@ -1,4 +1,12 @@
-{
-  "datateam@gmx.de":"admin",
-  "freddy":"dasgewürz123"
-}
+[
+  {
+    "name": "Administrator",
+    "email": "admin@page.com",
+    "password": "adminTemp332"
+  },
+  {
+    "name": "Freddy",
+    "email": "freddy@page.com",
+    "password": "dasgewürz123"
+  }
+]
